@@ -1,0 +1,76 @@
+/* Tirar margens e preenchimento padrão do navegador */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS do fundo da página */
+.fundo{
+    background-image: linear-gradient(60deg, black, rgb(31, 120, 221)); /* Cor com degrader no fundo */
+    height: 100vh; /* Preenchimento total da tela com o fundo */
+    color: #fff; /* Cor dos componentes na tela */
+    font: arial; /* Fonte dos textos na tela */
+    text-align: center; /* Alinhamento dos texto na tela */
+}
+
+/* CSS do titulo no topo da página */ 
+.titulo_topo{
+    font-size: 20px; /* Tamanho da fonte do titulo no topo */
+    padding-top: 60px; /* Espaço entre o topo da página e o titulo do topo */
+}
+
+/* CSS da calculadora */
+.calculadora_imc{
+    position: absolute; /* Comando para o componente so oculpar o seu espaço */
+    background-color: rgba(0, 0, 0, 0.8); /* Cor do fundo da calculadora */
+    border-radius: 10px; /* Arrendondar bordas da calculadora */
+
+    /* Tecnica para deixa centralizado no meio da pagina */
+    top: 50%; /* Mover 50% para baixo */
+    left: 50%; /* Mover 50% para direita */
+    transform: translate(-50%,-50%); /* Retorna no eixo X e Y, ambos -50% */
+
+    padding: 15px; /* Distanciamento dos componentes da calculadora e suas laterais */
+
+    height: 320px; /* Tamanho da altura da calculadora */
+}
+
+h2,label{
+    color: rgb(196, 113, 18); /* Cor dos componeste h2 e label na calculadora */
+}
+
+h2{
+    padding-bottom: 15px; /* Tamanho do espaçamento debaixo do titulo da calculadora */
+}
+
+input{
+    margin-top: 5px; /* Tamanho da magem de cima dos campos de digitação */
+    height: 20px; /* Altura dos campos de digitação */
+    width: auto; /* Largura dos campos de digitação */
+    text-align: center; /* Centralização dos texto/números nos campos de digitação */
+}
+
+.conteiner{
+    display: flex; /* Aplicando o display flex */
+    flex-flow: column wrap; /* Comando para os componentes se alinharem em coluna */
+}
+
+/* CSS do botão */
+#calcular{
+    height: 30px; /* Altura do botão */
+    width: 90px; /* Largura do botão */
+    background-color: rgb(12, 33, 53); /* Cor do botão */
+    border-color: rgb(196, 113, 18); /* Cor da borda */
+    border-radius: 5px; /* Arredondamento do botão */
+    color: rgb(196, 113, 18); /* Cor da borda do botão */
+}
+
+/* CSS do resultado */
+#resultado{
+    color: #000; /* Cor do texto */
+    background-color: #fff; /* Cor do fundo */
+    text-align: justify-all; /* Alinhamento do texto */
+    margin-top: 10px; /* Margem entre o resultado e o botão */
+    height: 45px; /* Altura da telinha */
+    width: auto; /* Largura da telinha */
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br"> <!-- Linguagem do site -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css"> <!-- Chamado para o documento HTML -->
+    <title>Calculadora IMC</title> <!-- Titulo do documento html -->
+</head>
+<body>
+    <div class="fundo"> <!-- Divisão pegando todos os elementos -->
+
+        <div class="titulo_topo"> <!-- Divisão do titulo no topo da página -->
+            <h1>Calculadora IMC de Renato</h1> <!-- Titulo principal da página -->
+        </div>
+        
+        <div class="calculadora_imc"> <!-- Divisão para criação da calculadora IMC -->
+
+            <h2>Calculadora IMC</h2> <!-- Titulo na calculadora -->
+
+                <div class="conteiner">
+
+                    <label>Nome: </label> <!-- Indicação para o campo de nome -->
+                    <input id="nome" type="text"><br> <!-- Entrada para o nome -->
+
+                    <label>Altura(cm): </label> <!-- Indicação para o campo de altura -->
+                    <input id="altura" type="number"><br> <!-- Entrada para a altura -->
+
+                    <label>Peso(kg)</label> <!-- Indicação para o campo de peso -->
+                    <input id="peso" type="number"><br> <!-- Entrada para o peso -->
+
+                </div>
+
+            <button id="calcular" onclick="calcularImc()" >Calcular IMC</button><br> <!-- Botão para calcular o IMC -->
+        
+            <p id="resultado"></p> <!-- Campo onde aparecera o resultado -->
+
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
